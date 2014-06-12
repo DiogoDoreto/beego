@@ -32,13 +32,16 @@ func serverStaticRouter(ctx *context.Context) bool {
 			}
 		}
 		if strings.HasPrefix(requestPath, prefix) {
-			if len(requestPath) > len(prefix) && requestPath[len(prefix)] != '/' {
+			if prefix != "/" && len(requestPath) > len(prefix) && requestPath[len(prefix)] != '/' {
 				continue
 			}
 			file := path.Join(staticDir, requestPath[len(prefix):])
 			finfo, err := os.Stat(file)
 			if err != nil {
 				if RunMode == "dev" {
+					if os.IsNotExist(err) {
+						return false
+					}
 					Warn(err)
 				}
 				http.NotFound(ctx.ResponseWriter, ctx.Request)
