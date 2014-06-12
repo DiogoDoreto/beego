@@ -1,7 +1,7 @@
 // Beego (http://beego.me/)
 // @description beego is an open-source, high-performance web framework for the Go programming language.
-// @link        http://github.com/astaxie/beego for the canonical source repository
-// @license     http://github.com/astaxie/beego/blob/master/LICENSE
+// @link        http://github.com/DiogoDoreto/beego for the canonical source repository
+// @license     http://github.com/DiogoDoreto/beego/blob/master/LICENSE
 // @authors     astaxie
 
 package beego
@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/astaxie/beego/toolbox"
-	"github.com/astaxie/beego/utils"
+	"github.com/DiogoDoreto/beego/toolbox"
+	"github.com/DiogoDoreto/beego/utils"
 )
 
 // BeeAdminApp is the default adminApp used by admin module.

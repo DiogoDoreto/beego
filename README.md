@@ -1,6 +1,6 @@
 ## beego
 
-[![Build Status](https://drone.io/github.com/astaxie/beego/status.png)](https://drone.io/github.com/astaxie/beego/latest)
+[![Build Status](https://drone.io/github.com/DiogoDoreto/beego/status.png)](https://drone.io/github.com/DiogoDoreto/beego/latest)
 
 beego is a Go Framework inspired by tornado and sinatra.
 
@@ -25,7 +25,7 @@ More info [beego.me](http://beego.me)
 
 [English](http://beego.me/docs/intro/)
 
-[API](http://gowalker.org/github.com/astaxie/beego)
+[API](http://gowalker.org/github.com/DiogoDoreto/beego)
 
 [中文文档](http://beego.me/docs/intro/)
 
@@ -36,4 +36,4 @@ beego is licensed under the Apache Licence, Version 2.0
 (http://www.apache.org/licenses/LICENSE-2.0.html).
 
 [![Clone in Koding](http://learn.koding.com/btn/clone_d.png)][koding]
-[koding]: https://koding.com/Teamwork?import=https://github.com/astaxie/beego/archive/master.zip&c=git1
+[koding]: https://koding.com/Teamwork?import=https://github.com/DiogoDoreto/beego/archive/master.zip&c=git1
