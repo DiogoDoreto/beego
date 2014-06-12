@@ -297,8 +297,12 @@ func initBeforeHttpRun() {
 }
 
 func TestBeegoInit(apppath string) {
+	TestBeegoInitWithConfig(apppath, filepath.Join(AppPath, "conf", "app.conf"))
+}
+
+func TestBeegoInitWithConfig(apppath, configpath string) {
 	AppPath = apppath
-	AppConfigPath = filepath.Join(AppPath, "conf", "app.conf")
+	AppConfigPath = configpath
 	err := ParseConfig()
 	if err != nil && !os.IsNotExist(err) {
 		// for init if doesn't have app.conf will not panic
