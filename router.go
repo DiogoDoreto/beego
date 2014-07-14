@@ -314,7 +314,7 @@ func (p *ControllerRegistor) splitRoute(pattern string) (paramnums int, params m
 	params = make(map[int]string)
 	for i, part := range parts {
 		if strings.HasPrefix(part, ":") {
-			expr := "(.*)"
+			expr := `([^/]+)`
 			//a user may choose to override the defult expression
 			// similar to expressjs: ‘/user/:id([0-9]+)’
 			if index := strings.Index(part, "("); index != -1 {
@@ -344,7 +344,7 @@ func (p *ControllerRegistor) splitRoute(pattern string) (paramnums int, params m
 			expr := "(.*)"
 			if part == "*.*" {
 				params[j] = ":path"
-				parts[i] = "([^.]+).([^.]+)"
+				parts[i] = `([^.]+)\.([^.]+)`
 				j++
 				params[j] = ":ext"
 				j++
